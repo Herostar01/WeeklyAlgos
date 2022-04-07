@@ -19,3 +19,5 @@ function solve(meal_cost, tip_percent, tax_percent) {
 solve(12.00, 20, 8);
 
 solve(123456, 23, 33);
+
+console.log(parseFloat(4.00) + parseFloat(4.00));
