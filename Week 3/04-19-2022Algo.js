@@ -29,8 +29,9 @@ function BubbleSortQuick(arr){
                 arr[b+1] = temp
             }
         }
+        console.log("ONE PASS COMPLETE")
     }
     return arr;
 }
 
-console.log(BubbleSortQuick([4,9,2,88,3,23,90,34]))
+console.log(BubbleSortQuick([4,9,2,88,3,23,-90,34]))
