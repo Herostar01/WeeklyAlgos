@@ -1,5 +1,30 @@
 // Selection Sort
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function selectionSort(arr){
     for(var a = 0; a < arr.length; a++){
         var lowest = a;
@@ -44,10 +69,10 @@ function selectionSort(arr){
             var temp = arr[a];
             arr[a] = arr[lowest];
             arr[lowest] = temp;
-            
+
         }
     }
-    
+    console.log(arr)
     return arr;
 }
 
