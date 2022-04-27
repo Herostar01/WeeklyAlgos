@@ -33,7 +33,7 @@ function selectionSort(arr){
                 lowest = b;
             }
         }
-        console.log(arr, arr[b], arr[lowest])
+        console.log(arr, arr[a], arr[lowest])
         console.log("SWAPPING TO: ")
         var temp = arr[a];
         arr[a] = arr[lowest];
@@ -64,7 +64,7 @@ function selectionSort(arr){
         }
         if(a !== lowest) {
             
-            console.log(arr, arr[b], arr[lowest])
+            console.log(arr, arr[a], arr[lowest])
             console.log("SWAPPING TO: ")
             var temp = arr[a];
             arr[a] = arr[lowest];

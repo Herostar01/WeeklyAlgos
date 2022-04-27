@@ -37,3 +37,40 @@ function BubbleSortV2(arr){
 }
 
 console.log(BubbleSortV2([9,34,23,98,38,1,45,9]))
+
+
+
+
+
+
+
+
+
+
+//Selection Sort Algo From Memory
+
+function SelSort(arr){
+
+    for( a = 0; a < arr.length; a++){
+        var lowest = a;
+        for( b = a+1; b < arr.length; b++){
+            if( arr[b] < arr[lowest]){
+                lowest = b;
+            }
+
+            if ( a !== lowest){
+
+                //SWAP
+                const swap = (arr, idx1, idx2) => {
+                    [ arr[idx1], arr[idx2] ] = [ arr[idx2], arr[idx1] ]
+                }
+                swap(arr, a, lowest)
+                
+            }
+        }
+    }
+    console.log(arr)
+    return arr;
+}
+
+SelSort([45,67,34,2,-33,78,12,-66])
