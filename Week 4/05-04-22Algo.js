@@ -17,3 +17,23 @@ function AlgoFromMemoryBubbleSort(arr){
 
 AlgoFromMemoryBubbleSort([9,3,5,33,2,15]);
 
+function AFMSelSort(arr){
+
+    for(var a = 0; a < arr.length; a++){
+        var lowest = a;
+        for( var b = a+1; b < arr.length; b++){
+            if(arr[b] < arr[lowest]){
+                lowest = b
+            }
+        }
+        //SWAP
+        var temp = arr[a];
+        arr[a] = arr[lowest];
+        arr[lowest] = temp;
+    }
+
+    console.log(arr)
+    return arr;
+}
+
+AFMSelSort([9,3,5,33,2,15]);
