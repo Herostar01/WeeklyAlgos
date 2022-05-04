@@ -4,7 +4,7 @@ function insertionSort(arr){
 
     for( var a = 1; a < arr.length; a++){
         var currentVal = arr[a];
-        for( var b = a -1; b >= 0; j--){
+        for( var b = a -1; b >= 0 && arr[j] > currentVal; j--){
 
         }
     }
