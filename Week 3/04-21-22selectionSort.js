@@ -44,7 +44,7 @@ function selectionSort(arr){
     return arr;
 }
 
-selectionSort([0,2,34,22,10,19,17]);
+selectionSort([10,2,34,22,19,17]);
 // i,j, lowest
 // 0,1, 1
 // 0,2, 2
