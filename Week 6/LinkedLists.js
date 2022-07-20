@@ -23,12 +23,32 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
+    pop(){
+        if(!this.head) return undefined;
+        var current = this.head;
+        var newTail = current;
+        while(current.next){
+            newTail = current;
+            current = current.next;
+        }
+        this.tail = newTail;
+        this.tail.next = null;
+        this.length--;
+        return current;
+
+        console.log(current.val)
+        console.log(newTail.val)
+    }
 }
 
 var list = new SinglyLinkedList()
-// list.push("HELLO")
-// list.push("GOODBYE")
-list.push("hi")
-list.push("YOU")
-list.push(99)
-console.log(list)
+list.push("HELLO")
+list.push("GOODBYE")
+list.push("!")
+// list.push("hi")
+// list.push("YOU")
+// list.push(99)
+console.log(list.pop());
+console.log(list.pop());
+console.log(list.push(99));
+
