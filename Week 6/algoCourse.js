@@ -25,14 +25,31 @@ function ReverseString(string){
     var arr = [];
 
     for (T = string.length - 1; T >= 0; T--){
-        console.log(T);
+        
         console.log(string[T]);
         arr.push(string[T])
     }
 
     console.log(arr);
-    return arr;
+
+    for( a = 0; a < arr.length; a++){
+        ReverseStr += arr[a]
+    }
+
+    console.log(ReverseStr)
+    return ReverseStr;
 }
 
 ReverseString("HELLO")
 
+//Reverse String
+
+function reverseStringV2(string){
+
+    return string
+        .split("")
+        .reverse()
+        .join("");
+}
+
+console.log(reverseStringV2("HELLO"))
