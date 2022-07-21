@@ -34,6 +34,11 @@ class SinglyLinkedList{
         this.tail = newTail;
         this.tail.next = null;
         this.length--;
+        if(this.length === 0){
+            this.head = null;
+            this.tail = null;
+        }
+
         return current;
 
         console.log(current.val)
@@ -50,7 +55,9 @@ list.push("!")
 // list.push(99)
 console.log(list.pop());
 console.log(list.pop());
-console.log(list.push(99));
+console.log(list.pop());
+console.log(list)
+// console.log(list.push(99));
 
 
 
