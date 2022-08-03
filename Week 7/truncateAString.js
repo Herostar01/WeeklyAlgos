@@ -7,7 +7,7 @@ function TruncateString(str, num) {
         return str.slice(0, num) + "..."
     }
     else {
-        return str;
+        return str;  
     }
     
 }
